@@ -38,7 +38,17 @@ Press 'esc' then 'wq' to quit.
 
 Configuration
 
-COMING SOON
+To keep variables secret :
+
+1. Create a `.env` file with the following variables:
+
+SENDER_EMAIL=your_email@example.com
+SENDER_PASSWORD=your_password # I think this is not your actual password but a code you'll get on the gcp platform 
+SHEET_ID=your_google_sheet_id
+
+2. Add your Google service account credentials file (`credentials.json`) to the root directory.
+3. Ensure that `.env` and `credentials.json` are excluded from version control by adding them to `.gitignore`.
+
 
 Next Steps:
-Deploy this on heroku?
+Deploy this on heroku? or use github actions
